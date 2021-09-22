@@ -1,8 +1,5 @@
 
-import adicao 
-import multi
-import divisao
-import subtracao
+import operacaoarquivo
 
 def chamada_princiapal():
     print("-------------- Calculadora #foda --------------")
@@ -14,16 +11,16 @@ def operacao(valor):
         var1 = int(input("Entre com o primeiro valor: "))
         var2 = int(input("Entre com o segundo valor: "))
         if (valor == 1) :
-            result = adicao.calcular(var1, var2)
+            result = operacaoarquivo.calcularad(var1, var2)
             print(var1," + ", var2, " = ", result)
         elif (valor == 2):
-            result = subtracao.calcular(var1, var2)
+            result = operacaoarquivo.calcularsub(var1, var2)
             print(var1," - ", var2, " = ", result)
         elif (valor == 3 ):
-            result = divisao.calcular(var1, var2)
+            result = operacaoarquivo.calculardiv(var1, var2)
             print(var1," / ", var2, " = ", result)
         elif (valor == 4):
-            result = multi.calcular(var1, var2)
+            result = operacaoarquivo.calcularmlt(var1, var2)
             print(var1," * ", var2, " = ", result)
         
 
